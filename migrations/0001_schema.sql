@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS admins (
   email TEXT NOT NULL UNIQUE COLLATE NOCASE,
   password_hash TEXT NOT NULL,
   password_salt TEXT NOT NULL,
-  password_iterations INTEGER NOT NULL DEFAULT 120000,
+  password_iterations INTEGER NOT NULL DEFAULT 100000,
   role TEXT NOT NULL DEFAULT 'owner' CHECK (role IN ('owner','admin')),
   is_active INTEGER NOT NULL DEFAULT 1 CHECK (is_active IN (0,1)),
   failed_attempts INTEGER NOT NULL DEFAULT 0,

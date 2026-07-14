@@ -1,0 +1,9 @@
+/admin /admin/ 301
+/admin/login /admin/login/ 301
+/admin/setup /admin/setup/ 301
+/layanan /layanan/ 301
+/checkout /checkout/ 301
+/lacak /lacak/ 301
+/pesanan /pesanan/ 301
+/invoice /invoice/ 301
+/pembayaran /pembayaran/ 301

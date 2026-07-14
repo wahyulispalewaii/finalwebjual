@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "dibantu-id-sales-app",
+  "pages_build_output_dir": "./public",
+  "compatibility_date": "2026-07-14"
+
+  // Binding production ditambahkan melalui:
+  // Cloudflare Dashboard > Workers & Pages > project > Settings > Bindings
+  // D1 binding: DB
+  // Tidak membutuhkan binding R2.
+}

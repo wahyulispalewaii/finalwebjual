@@ -1,0 +1,41 @@
+CREATE TRIGGER IF NOT EXISTS trg_admins_updated_at
+AFTER UPDATE ON admins
+FOR EACH ROW
+BEGIN
+  UPDATE admins SET updated_at = CURRENT_TIMESTAMP WHERE id = NEW.id;
+END;
+
+CREATE TRIGGER IF NOT EXISTS trg_services_updated_at
+AFTER UPDATE ON services
+FOR EACH ROW
+BEGIN
+  UPDATE services SET updated_at = CURRENT_TIMESTAMP WHERE id = NEW.id;
+END;
+
+CREATE TRIGGER IF NOT EXISTS trg_packages_updated_at
+AFTER UPDATE ON service_packages
+FOR EACH ROW
+BEGIN
+  UPDATE service_packages SET updated_at = CURRENT_TIMESTAMP WHERE id = NEW.id;
+END;
+
+CREATE TRIGGER IF NOT EXISTS trg_orders_updated_at
+AFTER UPDATE ON orders
+FOR EACH ROW
+BEGIN
+  UPDATE orders SET updated_at = CURRENT_TIMESTAMP WHERE id = NEW.id;
+END;
+
+CREATE TRIGGER IF NOT EXISTS trg_invoices_updated_at
+AFTER UPDATE ON invoices
+FOR EACH ROW
+BEGIN
+  UPDATE invoices SET updated_at = CURRENT_TIMESTAMP WHERE id = NEW.id;
+END;
+
+CREATE TRIGGER IF NOT EXISTS trg_payments_updated_at
+AFTER UPDATE ON payments
+FOR EACH ROW
+BEGIN
+  UPDATE payments SET updated_at = CURRENT_TIMESTAMP WHERE id = NEW.id;
+END;

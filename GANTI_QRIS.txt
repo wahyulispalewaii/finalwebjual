@@ -1,0 +1,11 @@
+CARA MENGGANTI GAMBAR QRIS
+
+1. Siapkan QRIS asli dalam format PNG.
+2. Ubah nama file menjadi: qris.png
+3. Ganti file berikut di project:
+   public/assets/img/qris.png
+4. Commit dan deploy ulang Cloudflare Pages.
+5. Masuk ke /admin/pengaturan/ dan aktifkan QRIS setelah pratinjau sudah benar.
+
+PENTING:
+File qris.png bawaan project hanya placeholder dan bukan QRIS yang dapat dipakai membayar.
